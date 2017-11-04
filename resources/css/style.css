@@ -18,6 +18,10 @@ h2{
   font-size: 16px;
 }
 
+.link li{
+  padding: 5px;
+}
+
 #projectlist{
   margin: 30px;
 }
