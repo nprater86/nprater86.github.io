@@ -1,14 +1,35 @@
 html{
   font-family: Helvetica;
+  color: dimgray;
 }
 h1{
   font-size: 40px;
-  text-align: center;
+  border: thick solid;
+  padding: 3px;
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
 }
 h2{
   font-size: 24px;
 }
 .link a{
   font-size: 16px;
-  font-color: Aquamarine;
+}
+
+#projectlist{
+  margin: 30px;
+}
+
+#header{
+  text-align: center;
+  background-image:url("../images/chicagoskyline.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  color: white;
+  height:500px;
+  width: 100%;
+  width: auto;
+  margin: 0 auto;
 }
