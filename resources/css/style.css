@@ -1,7 +1,5 @@
 html{
-  font-family: Arial;
-  background-color: Black;
-  color: White;
+  font-family: Helvetica;
 }
 h1{
   font-size: 40px;
@@ -10,7 +8,7 @@ h1{
 h2{
   font-size: 24px;
 }
-.link li{
+.link a{
   font-size: 16px;
   font-color: Aquamarine;
 }
