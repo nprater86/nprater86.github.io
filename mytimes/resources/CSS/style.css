@@ -8,6 +8,8 @@ header {
   height: 80px;
   width: 100%;
   border-bottom: 1px solid black;
+  background-color: white;
+  z-index: 5;
 }
 
 .logo span{
@@ -23,6 +25,7 @@ header {
 .logo{
   display: flex;
   align-items: center;
+  border: 1px solid black;
 }
 
 nav span{
@@ -30,6 +33,85 @@ nav span{
   padding: 20px 10px;
 }
 
-header nav{
-  
+.content div{
+  border: 1px solid black;
+}
+
+.content{
+  display: flex;
+  padding-top: 100px;
+  width: 100%;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.column{
+  margin-right: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.column.large{
+  width: 630px;
+  flex-shrink: 0;
+}
+.column.medium{
+  width: 300px;
+  flex-shrink: 0;
+}
+.column.small{
+  width: 240px;
+  flex-shrink: 0;
+}
+
+#tuna{
+  background-image: url("../images/img-story-main.png");
+  height: 300px;
+  width: 630px;
+  display: inline-block;
+}
+
+#earth{
+  background-image: url("../images/img-story-2.png");
+  height: 300px;
+  width: 630px;
+  display: inline-block;
+}
+
+#camera{
+  background-image: url("../images/img-story-3.png");
+  height: 300px;
+  width: 630px;
+  display: inline-block;
+}
+
+#cats{
+  background-image: url("../images/img-story-1.png");
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+}
+
+.imagetext{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.imagetextmain{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+
+.imagediv{
+  display: flex;
+  text-align: center;
+}
+
+.imagedivmain{
+  display: flex;
 }
