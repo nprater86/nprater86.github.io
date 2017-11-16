@@ -5,7 +5,7 @@ header {
   position: fixed;
   display: flex;
   align-items: center;
-  height: 80px;
+  justify-content: space-between;
   width: 100%;
   border-bottom: 1px solid black;
   background-color: white;
@@ -20,75 +20,54 @@ header {
   width: 70px;
   height: 60px;
   margin-right: 12px;
+  padding-left: 30px;
+}
+
+.nav{
+  padding-right: 40px;
 }
 
 .logo{
   display: flex;
   align-items: center;
   border: 1px solid black;
+  flex-grow: 1;
 }
 
-nav span{
+.nav span{
   display: inline-block;
   padding: 20px 10px;
 }
 
-.content div{
-  border: 1px solid black;
-}
-
 .content{
   display: flex;
-  padding-top: 100px;
-  width: 100%;
-  justify-content: center;
-  border: 1px solid black;
+  width: 1266px;
+  margin: 0 auto 78px auto;
+  padding-top: 116px;
 }
 
 .column{
   margin-right: 32px;
-  display: flex;
-  flex-direction: column;
 }
 .column.large{
   width: 630px;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
 }
+
 .column.medium{
   width: 300px;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
 }
+
 .column.small{
   width: 240px;
   flex-shrink: 0;
-}
-
-#tuna{
-  background-image: url("../images/img-story-main.png");
-  height: 300px;
-  width: 630px;
-  display: inline-block;
-}
-
-#earth{
-  background-image: url("../images/img-story-2.png");
-  height: 300px;
-  width: 630px;
-  display: inline-block;
-}
-
-#camera{
-  background-image: url("../images/img-story-3.png");
-  height: 300px;
-  width: 630px;
-  display: inline-block;
-}
-
-#cats{
-  background-image: url("../images/img-story-1.png");
-  height: 300px;
-  width: 300px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 }
 
 .imagetext{
@@ -96,8 +75,6 @@ nav span{
   font-weight: bold;
   font-size: 30px;
   color: white;
-  width: 500px;
-  margin: 0 auto;
 }
 
 .imagetextmain{
@@ -107,11 +84,50 @@ nav span{
   color: white;
 }
 
-.imagediv{
+.camera{
   display: flex;
+  flex-direction: column;
   text-align: center;
+  background-image: url("../images/img-story-3.png");
+  height: 300px;
+  width: 300px;
 }
 
-.imagedivmain{
+.earth{
   display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: url("../images/img-story-2.png");
+  height: 300px;
+  width: 300px;
+}
+
+.cats{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: url("../images/img-story-1.png");
+  height: 300px;
+  width: 300px;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/img-story-main.png");
+  height: 300px;
+  width: 630px;
+}
+
+.story{
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+}
+
+.stories{
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  justify-content: space-around;
 }
