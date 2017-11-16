@@ -172,9 +172,11 @@ footer{
   height: 55px;
   align-items: center;
 }
+
 .footernav{
   padding-left: 25px;
 }
+
 .footernav span{
   padding-left: 25px;
 }
