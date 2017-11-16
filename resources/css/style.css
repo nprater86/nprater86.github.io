@@ -3,18 +3,21 @@ html{
   color: dimgray;
 }
 
+body{
+  margin:0;
+}
+
 .header{
-  text-align: center;
   background-image:url("../images/chicagoskyline.jpg");
   background-size: cover;
   background-position: bottom center;
-  color: white;
-  height:500px;
+  z-index: 5;
+  position: fixed;
+  height: 400px;
   width: 100%;
-  width: auto;
-  margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .header h1{
@@ -23,8 +26,7 @@ html{
   padding: 3px;
   width: 600px;
   margin: 0 auto;
-  position: relative;
-  display: block;
+  color: white;
 }
 
 h2{
@@ -34,13 +36,20 @@ h2{
 .projectlist{
   display: flex;
   flex-direction: column;
-  margin: 30px;
+  padding-top: 430px;
+  align-items: center;
+  background-color: Snow;
+}
+
+.projectlist h2{
+  padding-bottom: 25px;
+  border-bottom: 3px solid dimgray;
 }
 
 .projectlist nav{
   display: flex;
   flex-direction: column;
-  margin-top: 25px;
+  align-items: center;
 }
 
 nav span{
